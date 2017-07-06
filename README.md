@@ -24,7 +24,7 @@ import createRegl from 'regl'
 import createArc from 'regl-arc'
 
 const regl = createRegl()
-const arc = createArc(regl)
+const drawArc = createArc(regl)
 
 drawArc({
   radius: 0.1,
