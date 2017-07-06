@@ -8,18 +8,22 @@
   },
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-env": "^1.6.0",
+    "browserify": "^14.4.0",
     "es2020": "^1.1.9",
     "eslint": "^4.1.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "uglify-js": "^3.0.23"
   },
   "scripts": {
-    "build": "babel quads.js > index.js",
+    "build": "babel draw-arc.js > index.js",
+    "build-demo": "browserify draw-arc.test.js -t es2020 | uglifyjs -m -c warnings=false > bundle.js",
     "prepublish": "npm run build",
     "lint": "eslint .",
     "test": "budo draw-arc.test.js --open --live -- -t es2020"
