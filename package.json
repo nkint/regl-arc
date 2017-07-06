@@ -1,0 +1,33 @@
+{
+  "name": "regl-arc",
+  "version": "0.0.1",
+  "description": "👑  🏹  Draw circular arc with regl in the vertex shader",
+  "main": "index.js",
+  "dependencies": {
+    "regl": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "es2020": "^1.1.9",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "test": "budo draw-arc.test.js --open --live -- -t es2020"
+  },
+  "keywords": [
+    "regl",
+    "arc",
+    "2d",
+    "shader",
+    "vertex",
+    "trigonometry"
+  ],
+  "author": "nkint <nootropic.kint@gmail.com>",
+  "license": "MIT"
+}

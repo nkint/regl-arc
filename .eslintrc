@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "standard",
+  ],
+  "extends": [
+    "standard",
+  ],
+  "rules": {
+    "comma-dangle": [1, "always-multiline"],
+    "space-before-function-paren": [1, {"anonymous": "always", "named": "never"}],
+    "key-spacing": [1, {"beforeColon": false, "afterColon": true, "mode": "minimum"}],
+    "quotes": 0,
+    "object-curly-spacing": [0, "always"],
+    "block-spacing": [0, "always"],
+    "no-multi-spaces": [1, { "exceptions": {
+      "Property":             true,
+      "ObjectExpression":     true,
+      "ObjectTypeProperty":   true,
+      "ImportDeclaration":    true,
+      "VariableDeclarator":   true,
+      "BinaryExpression":     true,
+    } }],
+    "padded-blocks": [1, {"blocks": "never", "switches": "never", "classes": "never"}],
+  },
+  "settings": {
+  }
+}
