@@ -1,7 +1,8 @@
 
 
 # regl-arc
-[![NPM version][npm-image]][npm-url]
+
+👑  🏹  Draw circular arc with regl in the vertex shader
 
 ## Install
 
@@ -12,7 +13,7 @@ npm install --save regl-arc
 ## Usage
 
 Draw a 2D circular arc given starting point p1, ending point p2, the center of the circle, the radius and a clockwise flag.
-Points (center, p1, p2) are expressed as an array of two numbers, i.e. [x, y] coordinates (see [simplicial complex][https://github.com/mikolalysenko/simplicial-complex]).
+Points (center, p1, p2) are expressed as an array of two numbers, i.e. [x, y] coordinates (see [simplicial complex](https://github.com/mikolalysenko/simplicial-complex)).
 
 Parameters are passed as uniforms to the vertex shader.
 
@@ -35,7 +36,7 @@ drawArc({
 })
 ```
 
-There is an example you can run with [budo][https://github.com/mattdesl/budo]:
+There is an example you can run with [budo](https://github.com/mattdesl/budo):
 
 ```sh
 budo draw-arc.test.js --open --live -- -t es2020
