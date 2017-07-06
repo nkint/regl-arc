@@ -2,7 +2,7 @@
 
 # regl-arc
 
-👑  🏹  Draw circular arc with regl in the vertex shader
+👑  🏹  Draw circular arc with regl in the vertex shader ([live example](https://nkint.github.io/regl-arc/))
 
 ## Install
 
